@@ -1,0 +1,15 @@
+C:\Pessoal\Atividades\ordenacao\bin\Debug\net7.0\ordenacao.exe
+C:\Pessoal\Atividades\ordenacao\bin\Debug\net7.0\ordenacao.deps.json
+C:\Pessoal\Atividades\ordenacao\bin\Debug\net7.0\ordenacao.runtimeconfig.json
+C:\Pessoal\Atividades\ordenacao\bin\Debug\net7.0\ordenacao.dll
+C:\Pessoal\Atividades\ordenacao\bin\Debug\net7.0\ordenacao.pdb
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.csproj.AssemblyReference.cache
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.AssemblyInfoInputs.cache
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.AssemblyInfo.cs
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.csproj.CoreCompileInputs.cache
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.dll
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\refint\ordenacao.dll
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.pdb
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.genruntimeconfig.cache
+C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ref\ordenacao.dll
