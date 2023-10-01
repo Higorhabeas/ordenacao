@@ -13,3 +13,18 @@ C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\refint\ordenacao.dll
 C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.pdb
 C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ordenacao.genruntimeconfig.cache
 C:\Pessoal\Atividades\ordenacao\obj\Debug\net7.0\ref\ordenacao.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.csproj.AssemblyReference.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.AssemblyInfoInputs.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.AssemblyInfo.cs
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.csproj.CoreCompileInputs.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\refint\ordenacao.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.pdb
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.exe
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.deps.json
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.runtimeconfig.json
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.pdb
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.genruntimeconfig.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ref\ordenacao.dll
