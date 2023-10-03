@@ -25,14 +25,14 @@ class Program {
             //Console.Write(vetorAleatorio[i] + " ");
         //}
 
-         int[] arr = { 12, 11, 13, 5, 6, 7 };
-        Console.WriteLine("Array original:");
-        PrintArray(arr);
+         int[] vetor = { 12, 11, 13, 5, 6, 7 };
+        Console.WriteLine("vetor original:");
+        Printvetor(vetor);
 
-        Sort(arr, 0, arr.Length - 1);
+        Sort(vetor, 0, vetor.Length - 1);
 
-        Console.WriteLine("Array ordenado:");
-        PrintArray(arr);
+        Console.WriteLine("vetor ordenado:");
+        Printvetor(vetor);
 
         Console.ReadLine();
         
@@ -110,75 +110,76 @@ class Program {
         Console.WriteLine("Tempo decorrido: " + tempoDecorridoEmMilissegundos + " milissegundos");
     }
 
-    public static void Merge(int[] arr, int left, int middle, int right)
-    {
-        int n1 = middle - left + 1;
-        int n2 = right - middle;
+    public static void Merge(int[] vetor, int esquerda, int meio, int direita){
+        int n1 = meio - esquerda + 1; //determina o tamanho do subvetor
+        int n2 = direita - meio; //determina o tamanho do subvetor
 
-        int[] leftArr = new int[n1];
-        int[] rightArr = new int[n2];
+        int[] esquerdavetor = new int[n1];
+        int[] direitavetor = new int[n2];
 
-        for (int i = 0; i < n1; i++)
-        {
-            leftArr[i] = arr[left + i];
+        for (int i = 0; i < n1; i++){ //preenche o vetor a esquerda
+
+            esquerdavetor[i] = vetor[esquerda + i];
         }
 
-        for (int j = 0; j < n2; j++)
-        {
-            rightArr[j] = arr[middle + 1 + j];
+        for (int j = 0; j < n2; j++){ //preenche o vetor a direita
+
+            direitavetor[j] = vetor[meio + 1 + j];
         }
 
-        int k = left;
+        int k = esquerda; //inicia o k com a posição inicio da esquerda
         int iIdx = 0, jIdx = 0;
 
-        while (iIdx < n1 && jIdx < n2)
-        {
-            if (leftArr[iIdx] <= rightArr[jIdx])
-            {
-                arr[k] = leftArr[iIdx];
+        while (iIdx < n1 && jIdx < n2){
+            //compara o top da pilha da esquerda e da direita e ordena
+            if (esquerdavetor[iIdx] <= direitavetor[jIdx]){
+
+                vetor[k] = esquerdavetor[iIdx];
                 iIdx++;
             }
-            else
-            {
-                arr[k] = rightArr[jIdx];
+            else{
+
+                vetor[k] = direitavetor[jIdx];
                 jIdx++;
             }
             k++;
         }
 
-        while (iIdx < n1)
-        {
-            arr[k] = leftArr[iIdx];
+        // preenche com os demais elementos que sobraram na esquerda
+        while (iIdx < n1){
+
+            vetor[k] = esquerdavetor[iIdx];
             iIdx++;
             k++;
         }
 
-        while (jIdx < n2)
-        {
-            arr[k] = rightArr[jIdx];
+        //preeche com os demais elementos que sobraram na direita
+        while (jIdx < n2){
+
+            vetor[k] = direitavetor[jIdx];
             jIdx++;
             k++;
         }
     }
 
-    public static void Sort(int[] arr, int left, int right)
-    {
-        if (left < right)
-        {
-            int middle = (left + right) / 2;
+    public static void Sort(int[] vetor, int esquerda, int direita){
 
-            Sort(arr, left, middle);
-            Sort(arr, middle + 1, right);
+        if (esquerda < direita){
 
-            Merge(arr, left, middle, right);
+            int meio = (esquerda + direita) / 2;
+
+            Sort(vetor, esquerda, meio);
+            Sort(vetor, meio + 1, direita);
+
+            Merge(vetor, esquerda, meio, direita);
         }
     }
 
    
 
-    public static void PrintArray(int[] arr)
+    public static void Printvetor(int[] vetor)
     {
-        foreach (var num in arr)
+        foreach (var num in vetor)
         {
             Console.Write(num + " ");
         }
