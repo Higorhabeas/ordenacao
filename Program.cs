@@ -185,4 +185,30 @@ class Program {
         }
         Console.WriteLine();
     }
+
+    public static void OrdenaCont(int[]vetor){
+        
+        int maiorValor =0;
+        for (int i = 0; i < vetor.Length; i++){
+
+            if(maiorValor < vetor[i]){
+
+                maiorValor=vetor[i];
+            }
+        }
+
+        int[] vetorAux = new int[maiorValor];
+
+        for (int l = 0; l < vetor.Length; l++){
+            vetorAux[vetor[l]] += 1; 
+        }
+
+        int[] vetorPosicao = new int[vetorAux.Length];
+
+        for (int j = 0; j < vetor.Length; j++){
+                        
+        }
+    }
+
+
 }
