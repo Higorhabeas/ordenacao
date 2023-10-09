@@ -25,17 +25,17 @@ class Program {
             //Console.Write(vetorAleatorio[i] + " ");
         //}
 
-         int[] vetor = { 12, 11, 13, 5, 6, 7 };
+         int[] vetor = { 3,6,1,2,3,6,4,2,3,1};
         Console.WriteLine("vetor original:");
         Printvetor(vetor);
 
-        Sort(vetor, 0, vetor.Length - 1);
+        //Sort(vetor, 0, vetor.Length - 1);
 
-        Console.WriteLine("vetor ordenado:");
-        Printvetor(vetor);
-
-        Console.ReadLine();
+        //Console.WriteLine("vetor ordenado:");
+        //Printvetor(vetor);
         
+        ContOrdena(vetor);
+        Console.ReadLine();
     
     }
 
@@ -67,19 +67,19 @@ class Program {
 
         for (int i = 0; i < n - 1; i++)
         {
-            int minIndex = i;
+            int menorValorIndex = i;
 
             for (int j = i + 1; j < n; j++)
             {
-                if (v2[j] < v2[minIndex])
+                if (v2[j] < v2[menorValorIndex])
                 {
-                    minIndex = j;
+                    menorValorIndex = j;
                 }
             }
 
             int temp = v2[i];
-            v2[i] = v2[minIndex];
-            v2[minIndex] = temp;
+            v2[i] = v2[menorValorIndex];
+            v2[menorValorIndex] = temp;
         }
     }
 
@@ -111,8 +111,8 @@ class Program {
     }
 
     public static void Merge(int[] vetor, int esquerda, int meio, int direita){
-        int n1 = meio - esquerda + 1; //determina o tamanho do subvetor
-        int n2 = direita - meio; //determina o tamanho do subvetor
+        int n1 = meio - esquerda + 1; //determenorValora o tamanho do subvetor
+        int n2 = direita - meio; //determenorValora o tamanho do subvetor
 
         int[] esquerdavetor = new int[n1];
         int[] direitavetor = new int[n2];
@@ -186,28 +186,59 @@ class Program {
         Console.WriteLine();
     }
 
-    public static void OrdenaCont(int[]vetor){
-        
-        int maiorValor =0;
-        for (int i = 0; i < vetor.Length; i++){
+    static void ContOrdena(int[] vetor)
+    {
+        int maiorValor = vetor[0];
+        int menorValor = vetor[0];
 
-            if(maiorValor < vetor[i]){
-
-                maiorValor=vetor[i];
-            }
+        // Encontra o valor máximo e mínimo no vetor
+        for (int i = 1; i < vetor.Length; i++)
+        {
+            if (vetor[i] > maiorValor)
+                maiorValor = vetor[i];
+            if (vetor[i] < menorValor)
+                menorValor = vetor[i];
         }
 
-        int[] vetorAux = new int[maiorValor];
+        int intervalo = maiorValor - menorValor + 1;
 
-        for (int l = 0; l < vetor.Length; l++){
-            vetorAux[vetor[l]] += 1; 
+        // Cria um vetor de contagem
+        int[] vetorCont = new int[intervalo];
+        int[] vetorSaida = new int[vetor.Length];
+
+        // Inicializa o vetor de contagem
+        for (int i = 0; i < intervalo; i++)
+        {
+            vetorCont[i] = 0;
         }
 
-        int[] vetorPosicao = new int[vetorAux.Length];
-
-        for (int j = 0; j < vetor.Length; j++){
-                        
+        // Preenche o vetor de contagem
+        for (int i = 0; i < vetor.Length; i++)
+        {
+            vetorCont[vetor[i] - menorValor]++;
         }
+        // Cria o vetor de posição
+        int[] vetorPos = new int[intervalo];
+        // Preenche as posições coforme posições anteriores
+        for (int i = 1; i < intervalo; i++)
+        {
+            vetorPos[i] = vetorPos[i - 1] + vetorCont[i - 1];
+        }
+
+        Printvetor(vetorPos);
+        // Posiciona o elemento do vetor original no vetor saida conferme o vetor posição e soma 1 na posição
+        for (int h = 0; h < vetor.Length; h++){
+            vetorSaida[vetorPos[vetor[h]-menorValor]] = vetor[h]; 
+            vetorPos[vetor[h]-menorValor]++;
+        }
+
+       
+        for (int i = 0; i < vetor.Length; i++)
+        {
+            vetor[i] = vetorSaida[i];
+        }
+
+        Printvetor(vetorSaida);
     }
 
 

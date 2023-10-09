@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Higor\\.nuget\\packages\\": {}
+    "C:\\Users\\higor_kwmzknu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
+      "projectUniqueName": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
       "projectName": "ordenacao",
-      "projectPath": "c:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
-      "packagesPath": "C:\\Users\\Higor\\.nuget\\packages\\",
-      "outputPath": "c:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\obj\\",
+      "projectPath": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
+      "packagesPath": "C:\\Users\\higor_kwmzknu\\.nuget\\packages\\",
+      "outputPath": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Higor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\higor_kwmzknu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
