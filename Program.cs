@@ -3,15 +3,21 @@ using System;
 class Program {
     static void Main(String[] args) {
 
-        //Random random = new Random();
-        //int tamanhoVetor = 1000000;
+        Random random = new Random();
+        int tamanhoVetor = 5000000;
 
-        //int[]vetorAleatorio = new int[tamanhoVetor];
+        int[]vetorAleatorio = new int[tamanhoVetor];
 
-        //for (int i = 0; i < tamanhoVetor; i++){
-           // vetorAleatorio[i] = random.Next(1,1000000);
-       // }
-        
+        for (int i = 0; i < tamanhoVetor; i++){
+            vetorAleatorio[i] = random.Next(1,75);
+       }
+
+       // tempo para vetor do tamanho 500: 0 milissegundos
+        // tempo para vetor do tamanho 1000: 0 milissegundos 
+        // tempo para vetor do tamanho 5000: 0 milissegundos 
+        // tempo para vetor do tamanho 100000: 1 milissegundos   
+        // tempo para vetor do tamanho 5000000: 56 milissegundos     
+
         //foreach (int valor in vetorAleatorio){
           //  Console.WriteLine(valor);
         //}
@@ -25,16 +31,16 @@ class Program {
             //Console.Write(vetorAleatorio[i] + " ");
         //}
 
-         int[] vetor = { 3,6,1,2,3,6,4,2,3,1};
-        Console.WriteLine("vetor original:");
-        Printvetor(vetor);
+        //int[] vetor = { 3,6,1,2,3,6,4,2,3,1};
+        //Console.WriteLine("vetor original:");
+        //Printvetor(vetorAleatorio);
 
         //Sort(vetor, 0, vetor.Length - 1);
 
         //Console.WriteLine("vetor ordenado:");
         //Printvetor(vetor);
         
-        ContOrdena(vetor);
+        ContOrdena(vetorAleatorio);
         Console.ReadLine();
     
     }
@@ -188,6 +194,8 @@ class Program {
 
     static void ContOrdena(int[] vetor)
     {
+         Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
         int maiorValor = vetor[0];
         int menorValor = vetor[0];
 
@@ -225,7 +233,7 @@ class Program {
             vetorPos[i] = vetorPos[i - 1] + vetorCont[i - 1];
         }
 
-        Printvetor(vetorPos);
+        
         // Posiciona o elemento do vetor original no vetor saida conferme o vetor posição e soma 1 na posição
         for (int h = 0; h < vetor.Length; h++){
             vetorSaida[vetorPos[vetor[h]-menorValor]] = vetor[h]; 
@@ -238,7 +246,12 @@ class Program {
             vetor[i] = vetorSaida[i];
         }
 
-        Printvetor(vetorSaida);
+         stopwatch.Stop();
+        long tempoDecorridoEmMilissegundos = stopwatch.ElapsedMilliseconds;
+        Console.WriteLine("Tempo decorrido: " + tempoDecorridoEmMilissegundos + " milissegundos");
+
+        //Console.WriteLine("vetor ordenado:");
+        //Printvetor(vetorSaida);
     }
 
 
