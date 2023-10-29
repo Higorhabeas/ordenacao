@@ -22,7 +22,7 @@ class Program {
           //  Console.WriteLine(valor);
         //}
         //BubbleSort(vetorAleatorio);
-        //SelectionSort(vetorAleatorio);
+        SelectionSort(vetorAleatorio);
         //InsertionSort(vetorAleatorio);
 
         //Console.WriteLine("\nVetor ordenado:");
@@ -40,7 +40,7 @@ class Program {
         //Console.WriteLine("vetor ordenado:");
         //Printvetor(vetor);
         
-        ContOrdena(vetorAleatorio);
+        //ContOrdena(vetorAleatorio);
         Console.ReadLine();
     
     }
