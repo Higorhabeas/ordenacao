@@ -3,14 +3,14 @@ using System;
 class Program {
     static void Main(String[] args) {
 
-        Random random = new Random();
-        int tamanhoVetor = 5000000;
+       Random random = new Random();
+        int tamanhoVetor = 50000;
 
         int[]vetorAleatorio = new int[tamanhoVetor];
 
-        for (int i = 0; i < tamanhoVetor; i++){
-            vetorAleatorio[i] = random.Next(1,75);
-       }
+       for (int i = 0; i < tamanhoVetor; i++){
+           vetorAleatorio[i] = random.Next(1,5000);
+      }
 
        // tempo para vetor do tamanho 500: 0 milissegundos
         // tempo para vetor do tamanho 1000: 0 milissegundos 
@@ -31,14 +31,16 @@ class Program {
             //Console.Write(vetorAleatorio[i] + " ");
         //}
 
-        //int[] vetor = { 3,6,1,2,3,6,4,2,3,1};
+        //int[]  vetorAleatorio= { 3,6,1,2,3,6,4,2,3,1};
         //Console.WriteLine("vetor original:");
         //Printvetor(vetorAleatorio);
 
-        //Sort(vetor, 0, vetor.Length - 1);
+        Sort(vetorAleatorio, 0, vetorAleatorio.Length - 1);// chamada para Mergesort
 
         //Console.WriteLine("vetor ordenado:");
         //Printvetor(vetor);
+
+
         
         //ContOrdena(vetorAleatorio);
         Console.ReadLine();
@@ -166,6 +168,7 @@ class Program {
             jIdx++;
             k++;
         }
+        Printvetor(vetor);
     }
 
     public static void Sort(int[] vetor, int esquerda, int direita){
@@ -223,7 +226,7 @@ class Program {
         // Preenche o vetor de contagem
         for (int i = 0; i < vetor.Length; i++)
         {
-            vetorCont[vetor[i] - menorValor]++;
+            vetorCont[vetor[i] - 1]++;
         }
         // Cria o vetor de posição
         int[] vetorPos = new int[intervalo];
@@ -236,8 +239,8 @@ class Program {
         
         // Posiciona o elemento do vetor original no vetor saida conferme o vetor posição e soma 1 na posição
         for (int h = 0; h < vetor.Length; h++){
-            vetorSaida[vetorPos[vetor[h]-menorValor]] = vetor[h]; 
-            vetorPos[vetor[h]-menorValor]++;
+            vetorSaida[vetorPos[vetor[h]- 1]] = vetor[h]; 
+            vetorPos[vetor[h]-1]++;
         }
 
        
@@ -250,8 +253,8 @@ class Program {
         long tempoDecorridoEmMilissegundos = stopwatch.ElapsedMilliseconds;
         Console.WriteLine("Tempo decorrido: " + tempoDecorridoEmMilissegundos + " milissegundos");
 
-        //Console.WriteLine("vetor ordenado:");
-        //Printvetor(vetorSaida);
+        Console.WriteLine("vetor ordenado:");
+        Printvetor(vetorSaida);
     }
 
 

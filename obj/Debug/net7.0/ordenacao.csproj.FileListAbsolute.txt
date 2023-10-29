@@ -28,3 +28,18 @@ C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\orden
 C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.pdb
 C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.genruntimeconfig.cache
 C:\Cursos\Sistema de inforção\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ref\ordenacao.dll
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.exe
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.deps.json
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.runtimeconfig.json
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.dll
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\bin\Debug\net7.0\ordenacao.pdb
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.csproj.AssemblyReference.cache
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.AssemblyInfoInputs.cache
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.AssemblyInfo.cs
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.csproj.CoreCompileInputs.cache
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.dll
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\refint\ordenacao.dll
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.pdb
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ordenacao.genruntimeconfig.cache
+C:\Pessoal\Sistemas_De_Informacao\Disciplinas\AED\ordenacao\obj\Debug\net7.0\ref\ordenacao.dll

@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\higor_kwmzknu\\.nuget\\packages\\": {}
+    "C:\\Users\\Higor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
+      "projectUniqueName": "C:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
       "projectName": "ordenacao",
-      "projectPath": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
-      "packagesPath": "C:\\Users\\higor_kwmzknu\\.nuget\\packages\\",
-      "outputPath": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\obj\\",
+      "projectPath": "C:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
+      "packagesPath": "C:\\Users\\Higor\\.nuget\\packages\\",
+      "outputPath": "C:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\higor_kwmzknu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Higor\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.309\\RuntimeIdentifierGraph.json"
+>>>>>>> 2475a2d416c9835d9dff445c31fe1c0abdba611b
       }
     }
   }

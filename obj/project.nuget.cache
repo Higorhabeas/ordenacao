@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "/PjSwcYZn8+m7ub3R/kvLfGiBU56MsDzNvBdc3WrsoEjrwozygCyDgs6JUq7Du//10OPQ7Tv/BJ5MLVHcHMLRw==",
+=======
+  "dgSpecHash": "lZn3f+z1/JT+VEuTX/o7ReUKTxrClBU4KQMVTEygAdvX1yja3j82WNsG9HITyxLoZE11GXZ2mJlHM1zR3rPrPQ==",
+>>>>>>> 2475a2d416c9835d9dff445c31fe1c0abdba611b
   "success": true,
-  "projectFilePath": "C:\\Cursos\\Sistema de inforção\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
+  "projectFilePath": "C:\\Pessoal\\Sistemas_De_Informacao\\Disciplinas\\AED\\ordenacao\\ordenacao.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
